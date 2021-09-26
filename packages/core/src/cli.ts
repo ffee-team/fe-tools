@@ -1,6 +1,6 @@
 function ffee() {
   // TODO
-  console.log('ffee');
+  console.log('ffee core');
 }
 
 export = ffee;

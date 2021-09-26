@@ -1,7 +1,7 @@
 {
   "name": "@ffee/cli-core",
   "version": "0.1.0",
-  "description": "A common cli for front-end",
+  "description": "A common cli core",
   "author": "lmtdgg <lmtdit@yeah.net>",
   "homepage": "",
   "license": "MIT",
@@ -16,11 +16,11 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "dependencies": {
     "debug": "^4.3.2",
     "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.7"
   }
 }

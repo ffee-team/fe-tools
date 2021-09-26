@@ -3,12 +3,13 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "dev": "tsc --watch",
-    "build": "npm run clean && tsc",
+    "compile": "node scripts/compile.js",
+    "dev": "npm run compile -- packages dev",
+    "build": "npm run compile -- packages prod",
     "setup": "lerna bootstrap --npm-client pnpm",
     "clean": "rm -rf ./packages/*/lib",
     "lint": "eslint ./packages/*/src --ext .js,.jsx,.ts,.tsx --fix",
-    "pub": "npm run build;npm publish --access public"
+    "pub": "npm run build; node scripts/pub.js packages"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
@@ -31,6 +32,7 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
+    "chokidar": "^3.5.2",
     "fs-extra": "^10.0.0"
   },
   "engines": {
