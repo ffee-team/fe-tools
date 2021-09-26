@@ -1,0 +1,59 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@ffee/cli",
+      "version": "0.1.0",
+      "description": "A common cli for front-end",
+      "author": "lmtdgg <lmtdit@yeah.net>",
+      "homepage": "",
+      "license": "MIT",
+      "main": "lib/cli.js",
+      "bin": {
+        "ffee": "bin/ffee.js"
+      },
+      "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+      },
+      "files": [
+        "bin",
+        "lib"
+      ],
+      "dependencies": {
+        "@ffee/auto-module": "latest"
+      }
+    },
+    "prefix": "/Users/jg/workspace/ffee-team/fe-tools/packages/cli"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/jg/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/jg/workspace/ffee-team/fe-tools/packages/cli/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/jg/workspace/ffee-team/fe-tools/packages/cli",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "@ffee/auto-module is not in the npm registry, or you have no permission to fetch it.\n\nAn authorization header was used: Bearer 625f[hidden]",
+    "request": {
+      "authHeaderValue": "Bearer 625ff123-8c91-45e6-88e7-b9d758b68985",
+      "url": "https://registry.npmjs.org/@ffee%2Fauto-module"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "@ffee/auto-module",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/@ffee%2Fauto-module: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/@ffee%2Fauto-module: Not Found - 404\n    at RetryOperation._fn (/Users/jg/.nvm/versions/node/v14.17.6/pnpm-global/5/node_modules/.pnpm/pnpm@6.15.2/node_modules/pnpm/dist/pnpm.cjs:84810:18)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}

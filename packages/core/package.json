@@ -1,0 +1,26 @@
+{
+  "name": "@ffee/cli-core",
+  "version": "0.1.0",
+  "description": "A common cli for front-end",
+  "author": "lmtdgg <lmtdit@yeah.net>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/cli.js",
+  "bin": {
+    "ffee": "bin/ffee.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "debug": "^4.3.2",
+    "fs-extra": "^10.0.0"
+  }
+}
