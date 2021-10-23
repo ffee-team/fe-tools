@@ -7,7 +7,8 @@ const { execSync } = require('child_process');
   const ROOT_DIR = process.cwd();
   const TARGET_DIR = path.join(ROOT_DIR, TARGET);
 
-  const dirs = fs.readdirSync(TARGET_DIR).map(dir => path.join(TARGET_DIR, dir));
+  const dirs = fs.readdirSync(TARGET_DIR)
+    .map((dir) => path.join(TARGET_DIR, dir));
   const execCode = (dir) => {
     const CMD = `cd ${dir}; npm publish --access public`;
     const pkg = fs.readJSONSync(path.join(dir, 'package.json'));
@@ -19,11 +20,10 @@ const { execSync } = require('child_process');
     }
 
     if (status) {
-      console.log(pkg.name, pkg.version, "publish success!");
+      console.log(pkg.name, pkg.version, 'publish success!');
     } else {
-      console.log(pkg.name, pkg.version, "publish fail!");
+      console.log(pkg.name, pkg.version, 'publish fail!');
     }
-
   };
 
   dirs.forEach(execCode);
