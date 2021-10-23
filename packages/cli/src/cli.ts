@@ -7,11 +7,12 @@ export default function ffee() {
   const ROOT_DIR_NAME = '.ffee';
   const ROOT_DIR = path.join(HOME_DIR, ROOT_DIR_NAME);
 
+  console.log(ROOT_DIR);
+
   // TODO
-  Auto.require('debug', { root: ROOT_DIR }).then(mod => {
+  Auto.require('@ffee/cli-core', { root: ROOT_DIR }).then((mod) => {
     console.log(mod);
   });
 
   console.log('ffee');
 }
-
