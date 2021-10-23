@@ -8,15 +8,22 @@ module.exports = {
     "airbnb-typescript/base"
   ],
   "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    // "ecmaVersion": 12,
-    // "sourceType": "module",
-    "project": "./tsconfig.json"
-  },
+  "overrides": [
+    {
+      "files": ['*.ts', '*.tsx', "*.js"], // Your TypeScript files extension
+      "parserOptions": {
+        "project": ['./tsconfig.json'], // Specify it only for TypeScript files
+      },
+    }
+  ],
   "plugins": [
     "@typescript-eslint"
   ],
   "rules": {
     "import/no-unresolved": 0,
-  },
-};
+    "@typescript-eslint/no-unused-expressions": 1,
+    "import/no-dynamic-require": 1,
+    "global-require": 0,
+    "no-restricted-syntax": 1
+  }
+}
