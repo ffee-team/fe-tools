@@ -20,10 +20,11 @@ module.exports = {
     "@typescript-eslint"
   ],
   "rules": {
-    "import/no-unresolved": 0,
     "@typescript-eslint/no-unused-expressions": 1,
+    "import/no-unresolved": 0,
     "import/no-dynamic-require": 1,
     "global-require": 0,
-    "no-restricted-syntax": 1
+    "no-restricted-syntax": 1,
+    "padded-blocks": 1
   }
 }

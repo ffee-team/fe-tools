@@ -1,6 +1,4 @@
-'use strict';
-
-import ffee from '../src/cli';
+import ffee from '../src';
 
 describe('cli', () => {
   console.log(ffee);

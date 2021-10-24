@@ -1,14 +1,11 @@
 {
-  "name": "@ffee/cli",
-  "version": "0.1.0",
-  "description": "A common cli for front-end",
+  "name": "@ffee/home",
+  "version": "0.0.1",
+  "description": "",
   "author": "lmtdgg <lmtdit@yeah.net>",
   "homepage": "",
   "license": "MIT",
   "main": "lib/index.js",
-  "bin": {
-    "ffee": "bin/ffee.js"
-  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -18,7 +15,6 @@
     "lib"
   ],
   "dependencies": {
-    "@ffee/auto-import": "latest",
-    "@ffee/home": "latest"
+    "fs-extra": "^9.1.0"
   }
 }
